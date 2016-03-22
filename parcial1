@@ -1,0 +1,48 @@
+// parcial1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std; 
+void main ( )
+{
+	float base,altura,area;
+	int op;
+
+	cout<<"digite"<<endl;
+	cout<<"1. para calcular el area del rectangulo"<<endl;
+	cout<<"2. para calcular el area del triangulo"<<endl;
+	cout<<"3. para no hacer nada"<<endl;
+	cout<<"escribir opcion"<<endl;
+	cin>>op;
+
+	    if (op==1)
+	    {
+		cout<<"ingrese la base:"<<endl;
+		cin>>base;
+
+		cout<<"ingrese la altura:"<<endl;
+		cin>>altura;
+
+		area=base*altura;
+		cout<<"el area es:"<<area<<endl;
+	    }
+
+	    if (op==2)
+	    {
+		cout<<"ingrese la base:"<<endl;
+		cin>>base;
+
+		cout<<"ingrese la altura:"<<endl;
+		cin>>altura;
+
+		area=(base*altura)/2;
+		cout<<"el area es"<<area<<endl;
+	    }
+	    if (op==3)
+		cout<<"GRACIAS";
+	getch ();
+
+	}
