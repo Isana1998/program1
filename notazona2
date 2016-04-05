@@ -1,0 +1,47 @@
+// programa para utilizar una variable o zona de control para
+//repetir. Se utiliza el mientras
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h" //para usar system
+
+
+using namespace std;
+void main()
+{ 
+	
+	float NP, P1, P2, P3, EF, Promedio, NF;
+    int NR, i;
+	Promedio=0;
+	i=0;
+
+	//Inicia zona de control
+	cout << "Bienvenido Usuario" <<endl;
+	cout << "Ingrese el Numero de Registro: (-999 para terminar)" <<endl;
+	cin >> NR;
+	// Fin zona de control
+
+	while (NR!=-999)  // Compara si el usuario digito el valor de finalizacion
+	   {
+		   cout << "Ingrese la nota de practica: " <<endl;
+		   cin >> NP;
+		   cout << "Ingrese la nota del primer parcial: " <<endl;
+		   cin >> P1;
+		   cout << "Ingrese la nota del segundo parcial: " <<endl;
+		   cin >> P2;
+		   cout << "Ingrese la nota del tercer parcial: " <<endl;
+		   cin >> P3;
+		   cout << "Ingrese la nota del examen final: " <<endl;
+		   cin >> EF;
+		   NF= (NP*0.2)+((P1+P2+P3)/3)*0.4+(EF*0.4);
+		   Promedio=Promedio+NF;
+		   system("cls"); // limpia la pantalla, para borrar todo
+		   i++; // i<- i+1 contador
+		   //se vuelve a repetir antes de terminar el mientras
+		   cout << "Ingrese el Numero de Registro: " <<endl;
+		   cin >> NR;
+
+      cout << "El promedio final es: " <<endl;
+	  cout << Promedio/i;
+	  getch ();
