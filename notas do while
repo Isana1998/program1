@@ -1,0 +1,49 @@
+// notasdo.cpp : Defines the entry point for the console application.
+//
+
+
+// programa para utilizar una variable o zona de control para
+//repetir. Se utiliza el mientras
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h" //para usar system
+
+
+using namespace std;
+void main()
+{ 
+	
+	float NP, P1, P2, P3, EF, Promedio, NF;
+    int NR, i;
+	char respuesta;
+	Promedio=0;
+	i=0;
+	   {
+		   do
+		   cout << "Ingrese la nota de practica: " <<endl;
+		   cin >> NP;
+		   cout << "Ingrese la nota del primer parcial: " <<endl;
+		   cin >> P1;
+		   cout << "Ingrese la nota del segundo parcial: " <<endl;
+		   cin >> P2;
+		   cout << "Ingrese la nota del tercer parcial: " <<endl;
+		   cin >> P3;
+		   cout << "Ingrese la nota del examen final: " <<endl;
+		   cin >> EF;
+		   cout << " " <<endl;
+
+		   NF= (NP*0.2)+((P1+P2+P3)/3)*0.4+(EF*0.4);
+		   Promedio=Promedio+NF;
+		   i= 1+i;
+		   cout << "Desea continuar (n para finalizar)" <<endl;
+		   cin >> m;
+		   cout << " "<<endl;
+	       system("cls"); // limpia la pantalla, para borrar todo
+	  }
+	  while (respuesta != 'n');
+      cout << "El promedio final es: " <<endl;
+	  cout << Promedio/i;
+	  getch ();
+	}
