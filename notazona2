@@ -45,3 +45,4 @@ void main()
       cout << "El promedio final es: " <<endl;
 	  cout << Promedio/i;
 	  getch ();
+          }
