@@ -1,0 +1,28 @@
+// practico6.5.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{
+	int m, i, n;
+	do{
+		cout<<"Ingrese el numero de elemetos que desea multiplicar"<<endl;
+		cin>> n;
+		cout<< " "<<endl;
+	} while (n<=0);
+	m=1;
+	for (i=1; i<=n; i++)
+	{
+		m= m*i;
+		cout<< "multiplicando:" <<i<<endl;
+	}
+	cout<<"la multiplicacion de los numeros es:" <<m;
+	getch ();
+	return 0;
+}
