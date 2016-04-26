@@ -1,0 +1,43 @@
+// clase.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+using namespace std;
+
+int main ()
+{
+	int aux, codigo, numprestamo, i;
+	float montoprestamo, montoe, montototal;
+	string nombre;
+	montototal=0;
+	//zona de contro por el codigo
+	cout<<"Ingrese el codigco del empleado (se termina con -999)"<<endl;
+	cin>>codigo;
+	while (codigo != -999)
+	{
+		aux=codigo;
+		montoe=0; // Inicializar el acumulador montototal
+		while (aux == codigo)
+			{
+				cout<<"Ingrese el Nombre del empleado:";
+				cin>>nombre;
+				cout<<"Ingrese el Numero de prestamo:";
+				cin>>numprestamo;
+				cout<<"Ingrese el Monto del prestamo:";
+				cin>>montoprestamo;
+				montoe=montoe+montoprestamo;
+				//zona de contro por el codigo
+				cout<< "Ingrese el codigo del empleado:"<<endl;
+				cin>>codigo;
+			}
+			cout<< "Empleadp:"<<aux<<"Monto del empleado:"<<montoe<<endl;
+			montototal=montototal+montoe;
+	}
+	cout<< "El Monto prestado a los empleados es:"<<montototal<<endl;
+	getch ();
+	return 0 ;
+}
