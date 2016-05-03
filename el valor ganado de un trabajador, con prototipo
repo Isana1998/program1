@@ -28,4 +28,6 @@ float ganancia (float h, float c)
 	return z;
 }
 	
+
+	
 	
