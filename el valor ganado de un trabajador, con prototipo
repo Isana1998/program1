@@ -1,0 +1,23 @@
+// clase2.16.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+float ganancia (float h, float c); //prototipo de la funcion
+
+int main ()
+{
+	float total,horas,costo;
+	cout<<"Ingrese el numero de horas:"<<endl;
+	cin>>horas;
+	cout<<"Ingrese el costo por hora:"<<endl;
+	cin>>costo;
+	total=ganancia (horas,costo);
+	cout<<"El valor ganado es:"<<ganado<<endl;
+	getch ();
+	return 0;
+}
+	
