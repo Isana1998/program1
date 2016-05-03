@@ -20,4 +20,12 @@ int main ()
 	getch ();
 	return 0;
 }
+
+float ganancia (float h, float c)
+{
+	float z;
+	z=h*c;
+	return z;
+}
+	
 	
