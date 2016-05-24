@@ -1,0 +1,55 @@
+// ejercicio6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar (int vector [], int tamaño);
+void mostrar (int vector [], int tamaño);
+void promedio (int vector [], int tamaño);
+void main ()
+{
+	int vector [MAX]={0}, tam;
+	cout<<"Ingrese el tamaño del vector:";
+	cin>>tam;
+	cargar (vector, tam);
+	mostrar (vector, tam);
+	promedio (vector, tam);
+	
+		void cargar (int vector [], int tamaño)
+		{
+			int i;
+			for (i=0; i<tamaño; i++)
+			{
+				cout<<"ingrese el numero que desea";
+				cin>>vector[i];
+			}
+		}
+		void mostrar (int vector [], int tamaño)
+		{
+			int i;
+			for (i=0; i<tamaño; i++)
+			{
+				cout<<vector[i];
+				cout<<endl;
+			}
+		}
+		void promedio (int vector [], int tamaño)
+		{
+			int i, j=0, p=0;
+			for (i=0; i<tamaño-2; i++)
+			{
+				for (j=0; j<3; j++)
+				{
+					p=p+vector [j+i];
+				}
+				p=p/3;
+				cout<<"El promedio es:"<<p<<endl;
+			}
+		}
+	getch ();
+}
